@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import CategoriesList from '../components/categories-list/index'
+import CategoryItem from '../components/category-item/index'
 
 function Categories() {
     return (
         <div>
-            <Link to="/"> go to home page </Link>
-            <ul>
-                <li> <b>file name:</b>component.jsx</li>
-                <li> <b>file name:</b> Component</li>
-            </ul></div>
+            <CategoriesList />
+            <CategoryItem />
+        </div>
     )
 }
 
