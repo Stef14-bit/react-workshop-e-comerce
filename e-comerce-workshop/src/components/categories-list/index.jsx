@@ -31,7 +31,10 @@ const data = [
 
 
 
-function CategoriesList() {
+
+
+function CategoriesList(props) {
+    const { data } = props
     return (
         <div className={styles.layout}>
             {data.map((element, index) => {
