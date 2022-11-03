@@ -1,8 +1,12 @@
 import React from 'react'
 
-function CategoryItem() {
+function CategoryItem(props) {
+    const { name, image } = props
     return (
-        <div>CategoryItem</div>
+        <div>
+            <h3>{name}</h3>
+            <img src={image} alt={name} />
+        </div>
     )
 }
 
